@@ -31,7 +31,7 @@ This is the **backend of an e-commerce web application** for a local car wash pr
 
 ```bash
 # Clone this repo
-git clone https://github.com/your-username/car-wash-ecommerce.git
+git clone https://github.com/RoddyCodes/car-wash-ecommerce.git
 cd car-wash-ecommerce
 
 # Set up virtual environment
