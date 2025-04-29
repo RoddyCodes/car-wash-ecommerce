@@ -15,7 +15,9 @@ class ProductViewSet(viewsets.ModelViewSet):
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated] ## Revert this when publishing
+    permission_classes = [permissions.AllowAny] ## For Testing Purposes
+ 
 
     def perform_create(self, serializer):
         # automatically set the user on order creation

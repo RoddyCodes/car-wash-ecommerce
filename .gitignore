@@ -54,3 +54,12 @@ yarn-error.log*
 # === Misc ===
 *.swp
 *~
+
+# React build outputs
+frontend/build/
+
+# Node modules
+frontend/node_modules/
+
+# Env files in frontend (if you ever add .env there)
+frontend/.env*
