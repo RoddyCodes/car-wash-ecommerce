@@ -1,26 +1,21 @@
 import React from 'react';
-import {
-  Card, CardMedia, CardContent, Typography, CardActions, Button
-} from '@mui/material';
-
-import { Link } from 'react-router-dom';
+import { Card, CardMedia, CardContent, Typography, Button, CardActions } from '@mui/material';
 
 export default function ProductCard({ product }) {
   return (
     <Card>
-      {product.image_url && (
-        <CardMedia
-          component="img"
-          height="140"
-          image={product.image_url}
-          alt={product.name}
-        />
-      )}
+      <CardMedia
+        component="img"
+        height="200"
+        image={product.image}
+        alt={product.name}
+      />
       <CardContent>
         <Typography variant="h6">{product.name}</Typography>
-        <Typography color="text.secondary">${product.price}</Typography>
+        <Typography variant="body2">${product.price}</Typography>
       </CardContent>
       <CardActions>
+        <Button size="small">View</Button>
         <Button size="small">Add to Cart</Button>
       </CardActions>
     </Card>

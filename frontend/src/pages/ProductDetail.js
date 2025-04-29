@@ -16,7 +16,7 @@ export default function ProductDetail() {
   if (!product) return <Container sx={{ textAlign:'center', mt:4 }}><CircularProgress/></Container>;
 
   return (
-    <Container sx={{ mt:4 }}>
+    <Container maxWidth="lg" sx={{ py: 4 }}>
       <Typography variant="h4" gutterBottom>{product.name}</Typography>
       {product.image_url && <img src={product.image_url} alt={product.name} width="100%" />}
       <Typography sx={{ mt:2 }}>${product.price}</Typography>
