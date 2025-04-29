@@ -42,12 +42,13 @@
 
 1. **Clone repository**
 
-
-
+```bash
+git clone https://github.com/RoddyCodes/car-wash-ecommerce.git
+cd car-wash-ecommerce
 ````
 
 2. **Backend setup**
-   ```bash
+```bash
 cd backend
 python3 -m venv venv
 source venv/bin/activate
@@ -64,7 +65,7 @@ python manage.py runserver
    npm start
    ```
 
-````
+
 
 - Backend API: `http://localhost:8000/api/`
 - React App: `http://localhost:3000/`
